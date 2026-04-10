@@ -2,7 +2,7 @@ site_name: Services
 site_url: https://manuales.algoritmia.sv/services/
 site_description: Manual de usuario de Servicios
 site_author: Edwin Fajardo
-copyright: Copyright &copy;2024 Algoritmia SV
+copyright: Copyright &copy;2024-2026 Algoritmia SV
 site_dir: /store/bphp/manuals/services
 nav:
   - Inicio: index.md
@@ -25,10 +25,14 @@ nav:
     - Roles: configuraciones/roles.md
     - Usuarios: configuraciones/usuarios.md
 theme:
-  name: mkdocs
+  name: material
   nav_style: dark
   locale: es
 extra_css:
   - css/algoritmiasv.css
 markdown_extensions:
   - attr_list
+plugins:
+  - to-pdf:
+      cover_subtitle: Sistema de facturación de servicio de agua potable
+      cover_logo: https://apps.rti.li/images/algoritmia_sv_logo.png
